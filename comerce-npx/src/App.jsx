@@ -1,4 +1,19 @@
 import './App.css';
+import ComponenteClase from './ComponenteClase';
+import Formulario from './components/Formulario/Formulario';
+import Titulo from './components/Titulo/Titulo';
+
+function Name(props){
+  console.log(props)
+ return(
+   <div>
+     <h3> {props.caca} {props.nombre} {props.apellido} </h3>
+     </div>
+
+ )
+}
+
+//Name("fede") => <Name params="fede"/>
 
 function App() {
 
@@ -37,11 +52,15 @@ return (
 
 
   <div className='App' style={objStyle}>
+    <ComponenteClase/>
 {count}
     <p>mayra</p>
+    <Formulario/>
     <img src="logo" alt="bhdknjsxm"/> 
+<Titulo/>
+<Name nombre="Mauyra" apellido="RAMOS" caca={10}/>
 
-    </div> 
+  </div> 
   );
 }
 
