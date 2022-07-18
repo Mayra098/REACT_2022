@@ -1,7 +1,12 @@
 
 import './App.css';
-import ItemListContainer from './components/ItemListContainer';
+import Item from './components/itemlistcontainer/itemlist/item/Item';
+import ItemListContainer from './components/itemlistcontainer/ItemListContainer';
 import NavBar from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemList from './components/itemlistcontainer/itemlist/ItemList';
+
+
 
 
 function App() {
@@ -11,9 +16,10 @@ function App() {
 
     <>
    <NavBar></NavBar>
+
  
 <div className='contenedor'>
-   <ItemListContainer greeting="Bienvenidxs!"></ItemListContainer>
+   <ItemListContainer></ItemListContainer>
    </div>
    </>
   );
